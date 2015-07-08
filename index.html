@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+
+<body>
+
+
+	<header>
+		<h2>Coffee Quiz</h2>
+		<p>By Wenjie Tang</p>
+
+	</header>
+
+	<div class="question_area">
+	    <div class= "feedback">
+	  		<p id = "start">How much do you know about coffee?</p>
+	  		<p id = 'in_progress'>Your score: <span class='correct'>0</span>/5 </p>
+	  	</div> <!-- .feedback-->
+
+	  	<div class="question">
+            <p>Question 1. Which country comes SECOND to Brazil as the world's largest coffee producer?</p>
+
+            <div id="answer_holder">
+			  <input type="radio" name="option" class="option" value="0"><span class="answer1">Vietnam</span><br>
+			  <input type="radio" name="option" class="option" value="1"><span class="answer2">Columbia</span><br>
+			  <input type="radio" name="option" class="option" value="2"><span class="answer3">Ghana</span><br>
+			  <input type="radio" name="option" class="option" value="3"><span class="answer4">India</span><br>
+			</div> <!-- .answer_holder -->
+
+            <button id = "submit_button"> Submit Answer </button>
+            <button id = "next_button"> Next Question </button>
+
+        </div> <!-- .question -->
+
+        <div class='conclusion'>You have finished the quiz!<br>You correctly answered <span class='correct'>0</span> questions. </div>
+        <button id = "new_button"> Start Over </button>
+		
+	</div> <!-- .question_area-->
+
+	<div class="output">  
+
+	</div>   
+
+
+</body>
+
+</html>
